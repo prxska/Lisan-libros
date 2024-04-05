@@ -1,0 +1,52 @@
+
+
+.title{
+ 
+    text-align: center;
+}
+
+.carrusel{
+
+display: block;
+
+padding-top: 100px;
+
+}
+
+.images{
+    display: block;
+    margin: 0 auto;
+    width: auto%;
+    height: auto;
+}
+
+footer{
+
+    padding-top: 90px;
+}
+header{
+
+    background-image:url(../images/background.jpg) ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.content-main { 
+
+
+    padding-top: 90px;
+
+}
+
+#main-title{
+    position: absolute;
+    top: 87%;
+    left: 5%;
+    justify-content: left;
+    object-position: bottom;
+    font-family: "font-family:Baskerville;";
+    font-size: 60px;
+
+}
