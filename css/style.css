@@ -3,7 +3,10 @@
 html{
 
     overflow-x: auto;
+    
 }
+
+
 
 .title{
  
@@ -14,7 +17,7 @@ html{
 
 display: block;
 
-padding-top: 100px;
+padding-top: 60%;
 
 }
 
@@ -31,10 +34,13 @@ footer{
 }
 header{
 
-    background-image:url(../images/background.jpg) ;
+    /* background-image:url(../images/background.jpg) ; */
     position: absolute;
     height: 100%;
     width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../images/background.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el header */
+    background-position: center; /* Centra la imagen de fondo dentro del header */
     opacity: 0.2;
 }
 
@@ -56,3 +62,16 @@ header{
 
 }
 
+#nav {
+    
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    font-size:20px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:red;
+}
