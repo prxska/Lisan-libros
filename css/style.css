@@ -1,5 +1,10 @@
 
 
+html{
+
+    overflow-x: auto;
+}
+
 .title{
  
     text-align: center;
@@ -16,7 +21,7 @@ padding-top: 100px;
 .images{
     display: block;
     margin: 0 auto;
-    width: auto%;
+    width: auto;
     height: auto;
 }
 
@@ -30,7 +35,7 @@ header{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .content-main { 
@@ -46,7 +51,8 @@ header{
     left: 5%;
     justify-content: left;
     object-position: bottom;
-    font-family: "font-family:Baskerville;";
+    font-family: "font-family:Baskerville";
     font-size: 60px;
 
 }
+
