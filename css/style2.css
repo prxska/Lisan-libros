@@ -1,0 +1,95 @@
+
+
+
+header{
+
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../images/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.7;
+}
+
+.box {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 1620px;
+    height: 800px;
+    background-color:  hsl(182, 25%, 50%, 0.35);  
+    padding: 50px; 
+    border-radius: 10px; 
+    font-size: 55px;
+    color: hsl(0, 0%, 0%, 1.0); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    opacity: 0.9;
+}
+
+
+#nav .nav-item {
+    color: black;
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 100%; 
+    line-height: 40px;
+    font-size: 30px;
+    background-color: hsl(182, 25%, 50%, 0.5) ;
+    border-radius: 23%/80%;
+
+}
+
+
+#nav .nav-item1 {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 100%; 
+    line-height: 4%;
+}
+
+#d{
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 100%; 
+    line-height: 1.54;
+    background-color: hsl(182, 25%, 50%, 0.5);
+    border-radius: 15%/75%;
+
+}
+#nav .nav{
+
+    list-style: none;
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    text-decoration: none;
+
+}
+
+#nav a {
+    color: white; 
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color:red;
+}
+
+#nav a:not([style="color:white"]) {
+    color: inherit; 
+}
+
+.navbar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
