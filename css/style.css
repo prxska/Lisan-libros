@@ -1,11 +1,59 @@
 
+/* EDICION DE IMAGENES */
+
+.images{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 50%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+
+#imagenLogo{
+    display: block;
+    margin-top: 25%;
+    margin-left: 3%;
+
+}
+
+.carrusel{
+
+    display: block;
+    padding-top: 60%;
+    
+    }
+    
+
+header{
+
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../images/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.9;
+}
+
+
+/* EDICION HTML */
 
 html{
 
     overflow-x: auto;
-    
+    background-color: black;
 }
 
+body   {
+
+    background-color: black;
+}
 
 
 .title{
@@ -13,36 +61,15 @@ html{
     text-align: center;
 }
 
-.carrusel{
 
-display: block;
-
-padding-top: 60%;
-
-}
-
-.images{
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-}
 
 footer{
-
+    background-color: black;
     padding-top: 90px;
+    margin-top: 30px;
 }
-header{
 
-    /* background-image:url(../images/background.jpg) ; */
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../images/background.jpg);
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el header */
-    background-position: center; /* Centra la imagen de fondo dentro del header */
-    opacity: 0.2;
-}
+
 
 .content-main { 
 
@@ -62,8 +89,38 @@ header{
 
 }
 
-#nav {
-    
+
+#nav .nav-item {
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 100%; 
+    line-height: 40px;
+    font-size: 30px;
+}
+
+
+#nav .nav-item1 {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 90%; 
+    line-height: 4%;
+}
+
+#d{
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; 
+    height: 90%; 
+    line-height: 1.54;
+
+}
+#nav .nav{
+
+    list-style: none;
     position: absolute;
     top: 100%;
     left: 35%;
@@ -72,6 +129,20 @@ header{
 
 }
 
-a:hover{
+#nav a {
+    color: white; 
+    text-decoration: none;
+}
+
+#nav a:hover{
     color:red;
+}
+
+#nav a:not([style="color:white"]) {
+    color: inherit; 
+}
+
+.navbar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
 }
