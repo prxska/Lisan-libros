@@ -14,13 +14,7 @@
 }
 
 
-#imagenLogo{
-    display:flex;
-    margin-top: 20%;
-    margin-left: -5%;
- 
 
-}
 
 .carrusel{
 
@@ -146,3 +140,38 @@ header {
   nav ul li a:hover {
     color: #f00;
   }
+
+
+.Nocturno {
+    max-width: 600px;
+    margin-left: 90%;
+    margin-top: -45%;
+    display: flex;
+  
+
+  
+  }
+  #imagenLogo{
+    display:flex;
+    margin-top: 20%;
+    margin-left: -5%;
+ 
+
+}
+/* 
+
+body {
+  background-color: #f4f4f4;
+  color: #333; 
+}
+
+.Noc {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #333; 
+  color: #f4f4f4; 
+} */

@@ -1,8 +1,8 @@
 
 
 header{
-  padding: 35px;
-background-color: black;
+  padding: 10px;
+background-color: rgb(255, 255, 255);
 }
 
 body{
@@ -14,22 +14,21 @@ body{
 }
 
 nav {
-  font-size: 200%;
+  font-size: 135%;
   list-style: none;
   position: absolute;
-  top: 10px;
-  left: 15%;
+  top: 20px;
+  left: 55%;
   text-decoration: none;
 }
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
   display: flex;
 }
 
 nav ul li {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 nav ul li:last-child {
@@ -38,7 +37,7 @@ nav ul li:last-child {
 
 nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav ul li a:hover {
