@@ -10,21 +10,11 @@ header{
 }
 
 
-body {
-
-    margin-top:2%;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0,0, 0.5), rgba(0, 0,0, 0.1)), url(../images/background.jpg);
-    background-size: cover; 
-    
-
-}
 
 
 /* NAVBAR */
 nav {
+
   font-size: 135%;
   list-style: none;
   position: absolute;
@@ -56,13 +46,20 @@ nav ul li a:hover {
 }
 
 
-footer{
-    background-color: black;
-    padding-top: 90px;
-    margin-top: 30px;
+
+body  {
+  background-color: rgba(216, 216, 216, 0.752);
+  
+  
 }
-
-
+footer{
+  margin-top: 0;
+  background: linear-gradient(rgba(122, 121, 121, 0.752), rgba(16, 16, 16, 0.842));
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: -16px ;
+  margin-top: 154px; 
+}
 
 
 
