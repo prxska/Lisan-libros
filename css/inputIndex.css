@@ -1,0 +1,13 @@
+
+
+#carouselExampleSlidesOnly .carousel-item img {
+    max-width: 70%; 
+    height: auto; /* Ajusta la altura automáticamente */
+    display: block;
+    margin: 100px auto;  
+  }
+
+  .col-md-7 {
+    margin: auto;
+    max-width: 100%;
+  }
