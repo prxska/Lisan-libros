@@ -3,6 +3,7 @@
     "development"
   ],
   "hints": {
+<<<<<<< HEAD
     "compat-api/css": [
       "default",
       {
@@ -12,5 +13,9 @@
       }
     ],
     "no-inline-styles": "off"
+=======
+    "no-inline-styles": "off",
+    "disown-opener": "off"
+>>>>>>> 5dde56df5ec3933ae96d900d5fad085e1b916e18
   }
 }
