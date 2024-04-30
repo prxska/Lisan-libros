@@ -1,11 +1,18 @@
 
 
-#carouselExampleSlidesOnly .carousel-item img {
+#carouselExampleSlidesOnly1 .carousel-item img {
     max-width: 70%; 
     height: auto; 
     display: block;
     margin: 150px auto;  
   }
+  #carouselExampleSlidesOnly2 .carousel-item img,
+.card-group .card img.card-img-top {
+    max-width: 45%; 
+    height: auto; 
+    display: block;
+    margin: 150px auto;  
+}
 
   .col-md-7 {
     margin: auto;
