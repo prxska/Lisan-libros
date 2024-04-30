@@ -2,7 +2,7 @@
 
 #carouselExampleSlidesOnly .carousel-item img {
     max-width: 70%; 
-    height: auto; /* Ajusta la altura automáticamente */
+    height: auto; 
     display: block;
     margin: 150px auto;  
   }
@@ -11,3 +11,11 @@
     margin: auto;
     max-width: 100%;
   }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté en la parte superior */
+
+}

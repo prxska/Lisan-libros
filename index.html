@@ -19,7 +19,7 @@
         display: block;
         margin: 0 auto;">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <img src="img/iconos/logo.png" alt="logo" style="max-width: 60%;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,8 +37,8 @@
                           <a class="nav-link" href="#">Inicia sesión</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -51,7 +51,7 @@
             <div class="row">
                 <!-- Columna para la tarjeta de información -->
                 <div class="col-md-7">
-                    <div class="card text-bg-light mb-3" style="max-width: 100rem;">
+                    <div id="quienes-somos" class="card text-bg-light mb-3" style="max-width: 100rem;">
                         <div class="card-header">¿Quiénes somos?</div>
                         <div class="card-body">
                             <h5 class="card-title">Bienvenidos a Lisan Libros</h5>
@@ -60,7 +60,8 @@
                                 Ofrecemos una amplia selección de libros de segunda mano y nuevos a precios accesibles,
                                 promoviendo la sostenibilidad y la cultura. En Lisan Libros, creemos en el poder de los libros para cambiar vidas
                                 y en la importancia de reducir nuestra huella ecológica. Únete a nosotros en nuestro viaje para reciclar, leer y prosperar
-                                juntos/as.</p>
+                                juntos/as.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +85,7 @@
         </div>
     </main>
 
-    <footer id="myFooter" style="position: fixed; bottom: 0; width: 100%; background: linear-gradient(to top, rgb(70, 70, 70), rgba(255, 255, 255, 0.336)); padding: 20px 0;">
+    <footer id="footer" style="position: block; bottom: 0; width: 100%; background: linear-gradient(to top, rgb(70, 70, 70), rgba(255, 255, 255, 0.336)); padding: 20px 0;">
         <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color:rgb(78, 78, 78); padding-bottom: 5px;">
             <p style=" max-width: 100%;
             text-align: center;
