@@ -23,6 +23,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que la barra de navegación esté en la parte superior */
-
+    transition: top 0.3s ease-in-out;
+    z-index: 1030; /* Asegurarse de que esté por encima de otros elementos */
 }
