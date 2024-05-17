@@ -31,7 +31,6 @@ $(document).ready(function() {
 
 
 
-
 $(document).ready(function(){
     $('#searchForm').submit(function(event) {
         event.preventDefault(); // Prevenir el envío del formulario
