@@ -1,26 +1,35 @@
 
 
-$(document).ready(function(){
-    var navbar = $('#myNavbar');
-    var navbarHeight = navbar.outerHeight(true); // Consideramos el margen del navbar
+$(document).ready(function() {
+    var navbar = $('#dynamicBar');
+    var navbarInitialOffsetTop = navbar.offset().top; // Obtener la posición inicial de la barra de navegación
+    var navbarHeight = navbar.outerHeight(true);
     var lastScrollTop = 0;
+    var isFixed = false;
 
     $(window).scroll(function() {
         var scrollTop = $(this).scrollTop();
-        if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
-            // Si se desplaza hacia abajo y ha pasado la altura del navbar
+        
+        // Si se desplaza hacia abajo y ha pasado la posición inicial del navbar
+        if (scrollTop > lastScrollTop && scrollTop > navbarInitialOffsetTop && !isFixed) {
             navbar.addClass('fixed-top');
-            // Añadir espacio de padding al cuerpo de la página para evitar solapamiento
             $('body').css('padding-top', navbarHeight);
-        } else {
-            // Si se desplaza hacia arriba o está en la parte superior de la página
+            isFixed = true;
+        } 
+        // Si se desplaza hacia arriba y está dentro del área inicial del navbar
+        else if (scrollTop < lastScrollTop && scrollTop <= navbarInitialOffsetTop && isFixed) {
             navbar.removeClass('fixed-top');
-            // Restablecer el espacio de padding del cuerpo de la página
             $('body').css('padding-top', 0);
+            isFixed = false;
         }
+        
         lastScrollTop = scrollTop;
     });
 });
+
+
+
+
 
 
 $(document).ready(function(){
@@ -53,3 +62,22 @@ $(document).ready(function(){
 function removeAccents(text) {
     return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+
+
+
+
+// fade de pagina 
+$(document).ready(function() {
+
+    $('#loginModal').on('show.bs.modal', function() {
+        $('body').addClass('no-fade');
+    }).on('hidden.bs.modal', function() {
+        $('body').removeClass('no-fade');
+    });
+
+    if (!$('body').hasClass('no-fade')) {
+        $('body').css('display', 'none');
+        $('body').fadeIn(2000);
+    }
+});
+
