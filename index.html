@@ -7,10 +7,11 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/inputIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="img/iconos/libro-de-lectura.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body class="light-mode">
     <header>
         <img src="img/iconos/icono.png" id="imagenLogo" alt="logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 
@@ -42,6 +43,10 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                    <!-- Interruptor de modo oscuro -->
+                    <button id="themeToggle" class="btn btn-secondary ms-2">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </button>
                 </div>
             </div>
         </nav>

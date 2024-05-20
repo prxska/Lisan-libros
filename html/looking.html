@@ -7,9 +7,29 @@
     <link rel="icon" href="../img/iconos/libro-de-lectura.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/inputLooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Modo oscuro */
+        .dark-mode .navbar {
+            background-color: #343a40 !important; /* Cambia el fondo del navbar en modo oscuro */
+        }
+
+        .dark-mode .navbar-dark .nav-link {
+            color: yellow; /* Cambia el color de los enlaces en modo oscuro */
+        }
+
+        .dark-mode .btn-secondary {
+            background-color: #4a4a4a; /* Color del botón en modo oscuro */
+            border-color: #4a4a4a;
+        }
+
+        .dark-mode .btn-secondary .fas {
+            color: white; /* Color del icono en modo oscuro */
+        }
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="../index.html"> <img src="../img/iconos/logo.png" alt="logo" style="max-width: 60%;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,6 +44,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <button id="themeToggle" class="btn btn-secondary">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -59,6 +84,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/callApi.js"></script>
