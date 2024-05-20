@@ -19,7 +19,7 @@
 }
 
 
-<<<<<<< HEAD
+
 .card-group {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +67,7 @@ h5 {
       flex: 1 1 calc(50% - 20px);
       max-width: calc(50% - 20px);
   }
-=======
+
 #carouselExampleSlidesOnly1 .carousel-item img {
     max-width: 70%; 
     height: auto; 
@@ -80,7 +80,7 @@ h5 {
     height: auto; 
     display: block;
     margin: 150px auto;  
->>>>>>> master
+
 }
 
 @media (max-width: 576px) {
@@ -88,9 +88,9 @@ h5 {
       flex: 1 1 100%; 
       max-width: 100%;
   }
-<<<<<<< HEAD
+
 }
-=======
+
 
   .fixed-top {
     position: fixed;
@@ -98,5 +98,4 @@ h5 {
     width: 100%;
     transition: top 0.3s ease-in-out;
     z-index: 1030; /* Asegurarse de que esté por encima de otros elementos */
-}
->>>>>>> master
+  }}
