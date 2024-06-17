@@ -6,7 +6,7 @@
     <title>Buscar información</title>
     <link rel="icon" href="../img/iconos/libro-de-lectura.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/inputLooking.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -25,10 +25,10 @@
                     <a class="nav-link" href="../index.html#quienes-somos">¿Quiénes somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#catalogo">Libros</a>
+                    <a class="nav-link" href="../index.html#catalogo"">Libros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Inicia sesión</a>
+                    <a class="nav-link" href="looking.html">Buscar libros<br>de interés</a>
                 </li>
                 <li class="nav-item">
                     <button id="themeToggle" class="btn btn-secondary">
@@ -40,34 +40,39 @@
     </nav>
 
     <div class="container">
-        <h1>Buscar libros</h1>
-        <center><h6>Busca información sobre tus libros favoritos</h6></center>
-        <div class="row search-bar">
-            <div class="col-md-10 offset-md-1">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="searchQuery" placeholder="Ingresa un titulo">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" onclick="searchBooks()">Buscar</button>
+        <center style="padding: 100px;">
+            <h1>Solo nos faltas tu!</h1>
+        
+            <div id="contenedorcentrado">
+                
+                <div id="login">
+                    <form id="loginform">
+                        <label for="usuario">Usuario</label>
+                        <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                        
+                        <label for="password">Contraseña</label>
+                        <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                        
+                        <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                    </form>
+                    
+                </div>
+                <div id="derecho">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <hr>
+                    <div class="pie-form">
+                        <!-- <a href="#">¿Perdiste tu contraseña?</a>      esto se agregara cuando el proyecto este mas desarrollado -->
+                        <a href="#">¿No tienes Cuenta? Registrate</a>
+                        <hr>
+    
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table table-striped table-bordered" id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th>Titulo</th>
-                            <th>Autor</th>
-                            <th>Año de publicación</th>
-                        </tr>
-                    </thead>
-                    <tbody id="resultsBody">
-                        <!-- resultados insertados aqui -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </center>
+
+
     </div>
 
 
