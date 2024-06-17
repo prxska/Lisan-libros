@@ -6,7 +6,7 @@
     <title>Buscar información</title>
     <link rel="icon" href="../img/iconos/libro-de-lectura.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/registrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -41,38 +41,52 @@
 
     <div class="container">
         <center style="padding: 100px;">
-            <h1>Es bueno verte de nuevo!</h1>
+            <h1>Solo nos faltas tu!</h1>
+        
+            <form>
             
-                <form>
-                    <div class="form-group">
-                      <label class="labeltext" for="exampleInputEmail1" >Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label class="labeltext" for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                 
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                    <hr>
-                    <div class="pie-form">
-                        <!-- <a href="#">¿Perdiste tu contraseña?</a>      esto se agregara cuando el proyecto este mas desarrollado -->
-                        <a href="registrar.html">¿No tienes Cuenta? Registrate</a>
-                        <hr>
-    
-                    </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" class="form-control" placeholder="First name" id="inputName">
+                  </div>
+                  <div class="col">
+                    <label for="inputLastName">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Last name" id="inputLastName">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control"  placeholder="Email" id="inputEmail">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control"  placeholder="Password" id="inputPassword">
+                  </div>
                 </div>
-
+                <div class="form-row">
+                  <div class="col">
+                    <label for="inputNumber">Numero</label>
+                    <input type="number" class="form-control" id="inputNumber">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
         </center>
+
+
     </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../js/callApi.js"></script>
+    <script src="../js/registrar.js"></script>
 </body>
 </html>
