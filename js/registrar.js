@@ -54,3 +54,14 @@ toggleButton.addEventListener('click', () => {
 
 
 
+
+// // area de Validaciones 
+
+//     // LOGIN 
+
+// function validacionLogin {
+//     var user = document.getElementById('inputMail').value;
+//     var pass = document.getElementById('inputPass').value;
+
+//     if ()
+// }

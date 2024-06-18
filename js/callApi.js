@@ -5,6 +5,8 @@ function searchBooks() {
     const query = document.getElementById('searchQuery').value;
     const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}`;
 
+    document.getElementById('loading').style.display = 'block';
+
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -12,10 +14,15 @@ function searchBooks() {
         })
         .catch(error => {
             console.error('Error fetching data:', error);
+        })
+        
+        .finally(() => {
+            document.getElementById('loading').style.display = 'none';
         });
 }
 // Traer datos hacia la pagina
 function displayResults(docs) {
+
     console.log('Thats right!');
     const resultsBody = document.getElementById('resultsBody');
     resultsBody.innerHTML = ''; // Clear any existing results

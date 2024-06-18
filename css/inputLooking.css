@@ -1,3 +1,7 @@
+#loading {
+  display: none;
+  color: #000000;
+}
 /* Estilos generales */
 body {
   background-color: #f8f9fa;
@@ -52,6 +56,11 @@ h1 {
   background-color: #222222;
   color: #e0e0e0;
 }
+
+.dark-mode #loading {
+  color: white;
+}
+
 .dark-mode h6 {
   color: #ffffff !important;
 }

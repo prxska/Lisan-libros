@@ -97,6 +97,11 @@ h5 {
   color: #e0e0e0;
 }
 
+.dark-mode #searchInput::placeholder {
+
+  color: white
+}
+
 .dark-mode .navbar {
   background-color: #1f1f1f !important;
   color: #e0e0e0;
