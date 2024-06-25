@@ -56,22 +56,32 @@
         <center style="padding: 100px;">
             <h1>Es bueno verte de nuevo!</h1>
             
-                <form>
+                <form method='POST' action="{% url 'loginUser' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
                     <div class="form-group">
                       <label class="labeltext" for="exampleInputEmail1" >Correo</label>
-                      <input type="email" class="form-control" id="inputMail" aria-describedby="emailHelp" >
+                      <input type="email" class="form-control" id="inputMail" aria-describedby="emailHelp" name="email">
                       <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
                     </div>
                     <div class="form-group">
                       <label class="labeltext" for="inputPass">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" >
+                      <input type="password" class="form-control" id="inputPassword" name="password">
                     </div>
                     <div class="form-check">
                  
                     </div>
                     <!-- anadir js de verificacion -->
-                    <a href="test.html"><button class="btn btn-primary" >Entrar</button></a> 
-                  </form>
+                    <a><button class="btn btn-primary" >Entrar</button></a> 
+                </form>
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
                     <hr>
                     <div class="pie-form">
                         <!-- <a href="#">¿Perdiste tu contraseña?</a>      esto se agregara cuando el proyecto este mas desarrollado -->
@@ -85,8 +95,8 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="{%static 'js/registrar.js'%}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></>
+    <script src="{%static 'js/registrar.js'%}"></>
 </body>
 </html>

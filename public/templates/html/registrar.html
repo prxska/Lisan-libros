@@ -45,49 +45,51 @@
         <center style="padding: 100px;">
             <h1>Solo nos faltas tu!</h1>
         
-            <form>
-            
-                <div class="form-row">
+            <form method="post" action="{% url 'crearUser' %}">
+              {% csrf_token %}
+              <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputName">Nombre</label>
-                    <input type="text" class="form-control" placeholder="First name" id="inputName">
+                      <label for="inputName">Nombre</label>
+                      <input type="text" class="form-control" name="first_name" placeholder="First name" id="inputName">
                   </div>
                   <div class="col">
-                    <label for="inputLastName">Apellido</label>
-                    <input type="text" class="form-control" placeholder="Last name" id="inputLastName">
+                      <label for="inputLastName">Apellido</label>
+                      <input type="text" class="form-control" name="last_name" placeholder="Last name" id="inputLastName">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control"  placeholder="Email" id="inputEmail">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" name="email" placeholder="Email" id="inputEmail">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNumber">Número</label>
-                    <input type="numeric" class="form-control" placeholder="999999999" id="inputNumber">
+                      <label for="inputNumber">Número</label>
+                      <input type="text" class="form-control" name="phone_number" placeholder="999999999" id="inputNumber">
                   </div>
-                </div>
-
-                <div class="form-row">
+              </div>
+              <div class="form-row">
                   <div class="col">
-                    <label for="inputPassword">Contraseña</label>
-                    <input type="password" class="form-control"  placeholder="Ingresa tu nueva contraseña" id="inputPassword">
+                      <label for="inputPassword">Contraseña</label>
+                      <input type="password" class="form-control" name="password" placeholder="Ingresa tu nueva contraseña" id="inputPassword">
                   </div>
-                </div>
-
-
-                <div class="form-row">
+              </div>
+              <div class="form-row">
                   <div class="col">
-                    <label for="inputPassword">Confirma tu contraseña</label>
-                    <input type="password" class="form-control"  placeholder="Confirma tu nueva contraseña" id="inputPasswordConfirmed">
+                      <label for="inputPasswordConfirmed">Confirma tu contraseña</label>
+                      <input type="password" class="form-control" name="password_confirmation" placeholder="Confirma tu nueva contraseña" id="inputPasswordConfirmed">
                   </div>
-                </div>
-
-
-                <div class="form-group">
+              </div>
+              <div class="form-group">
                   <div class="form-check">
                   </div>
-                </div>
-                <a href="test.html">   Registrar</a>
-              </form>
+              </div>
+              <button type="submit">Registrar</button>
+          </form>
+          {% if messages %}
+            <ul>
+              {% for message in messages %}
+                  <li>{{ message }}</li>
+              {% endfor %}
+          </ul>
+          {% endif %}
         </center>
 
 
