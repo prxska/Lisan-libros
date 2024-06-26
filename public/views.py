@@ -33,7 +33,6 @@ def crearUser(request):
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
-        phone_number = request.POST.get('phone_number')
         password = request.POST.get('password')
         password_confirmation = request.POST.get('password_confirmation')
 
@@ -48,7 +47,7 @@ def crearUser(request):
             return redirect('register')  
 
         new_user = User(first_name=first_name, last_name=last_name,
-                        email=email, phone_number=phone_number,
+                        email=email, 
                         password=password)
         new_user.save()
 
