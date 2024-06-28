@@ -1,14 +1,27 @@
+
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from .models import User, Libro
 
-# Register your models here.
-from .models import User
+class UserAdmin(BaseUserAdmin):
+    fieldsets = (
+        (None, {'fields': ('email', 'password')}),
+        ('Personal info', {'fields': ('first_name', 'last_name')}),
+        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Important dates', {'fields': ('last_login',)}),
+    )
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('email', 'password1', 'password2'),
+        }),
+    )
+    list_display = ('email', 'first_name', 'last_name', 'is_staff')
+    search_fields = ('email', 'first_name', 'last_name')
+    ordering = ('email',)
 
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('first_name', 'last_name', 'email', 'password')
-    search_fields = ('first_name', 'last_name', 'email')
+class LibroAdmin(admin.ModelAdmin):
+    list_display = ('titulo', 'autor', 'fecha_publicacion', 'fecha_recibo', 'usuario')
 
-
-
-
-# Register your models here.
 admin.site.register(User, UserAdmin)
+admin.site.register(Libro, LibroAdmin)
