@@ -7,6 +7,7 @@ from .forms import LibroForm, UserRegistrationForm
 from .models import Libro, User
 from django.contrib.auth import get_user_model
 
+
 def index(request):
     contexto = {}
     return render(request, 'index.html', contexto)
@@ -92,20 +93,13 @@ def loginUser(request):
 
 # public/views.py
 
-from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
-from django.contrib import messages
-from django.shortcuts import redirect, render, get_object_or_404
-from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.decorators import login_required
-from .forms import LibroForm, UserRegistrationForm
-from .models import Libro, User
-from django.contrib.auth import get_user_model
 
+
+@login_required
 @login_required
 def listar_libros(request):
     libros = Libro.objects.filter(usuario=request.user)
     return render(request, 'listar_libros.html', {'libros': libros})
-
 @login_required
 def agregar_libro(request):
     if request.method == 'POST':

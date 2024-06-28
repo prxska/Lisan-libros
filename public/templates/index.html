@@ -45,7 +45,10 @@
                         </li>
                         {% if user.is_authenticated %}
                             <li class="nav-item">
-                                <a class="nav-link"> Hola! {{ user.first_name }}</a>
+                                <a class="nav-link" href="{% url 'listar_libros' %}">Tus libros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Hola! {{ user.first_name }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'logout' %}">Salir</a>
@@ -166,8 +169,6 @@
             </div>
         </div>
     </main>
-    
-    
     
     <footer id="footer" style="position: block; bottom: 0; width: 100%; background: linear-gradient(to top, rgb(70, 70, 70), rgba(255, 255, 255, 0.336)); padding: 20px 0; font-family: 'Roboto', sans-serif;">
         <p style="text-align: center; padding-bottom: 5px;">

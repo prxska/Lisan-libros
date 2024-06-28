@@ -31,7 +31,7 @@
             <li class="nav-item">
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hola! {{ user.first_name }}</a>
+                    <a class="nav-link" >Hola! {{ user.first_name }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Salir</a>
