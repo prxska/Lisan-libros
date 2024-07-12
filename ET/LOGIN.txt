@@ -1,0 +1,15 @@
+Actualmente la aplicación cuenta con sistema de registro, la cual es posible usarla para iniciar sesión 
+
+En caso de querer acceder al panel de admin 
+
+Email : pruebaet@gmail.com
+Contraseña : duocduoc 
+
+(de igual forma se puede iniciar sesión dentro de la aplicación con estas credenciales
+pero es preferible usar el registro)
+
+Si le gustaria usar como un usuario ya registrado puede usar estas credenciales
+
+Email : prueba3@gmail.com 
+
+Contraseña : duocduoc
